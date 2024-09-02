@@ -1,0 +1,6 @@
+palavra=input("Insira a palavra: ")
+fat_list=list(palavra)
+for i in range(len(fat_list)-1):
+    for j in range(len(fat_list)-1-i):
+        fat_list[j], fat_list[j+1] = fat_list[j+1], fat_list[j]
+print(fat_list)
