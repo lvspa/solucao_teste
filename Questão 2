@@ -1,0 +1,11 @@
+def fibonacci(n):
+    seq = [0, 1]
+    while len(seq) < n:
+        next_value = seq[-1] + seq[-2]
+        seq.append(next_value)
+    if n in seq:
+        print("Esta dentro")
+    return seq
+
+n = int(input(""))
+print(fibonacci(n))
